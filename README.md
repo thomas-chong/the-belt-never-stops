@@ -8,6 +8,8 @@ A parcel-sorting belt run as a Google ADK workflow. Each parcel needs a decision
 - **Gemini** takes a second look only when Jev is unsure, and does the slow work: reading labels, writing reports, proposing policy edits.
 - **Code** (`belt/floor.py`) decides who acts, based on the confidence number.
 
+![Round 3: Jev, Gemini and code as one ADK workflow](docs/round3-workflow.jpg)
+
 ## Three rounds
 
 | Round | URL | What it shows |
@@ -15,6 +17,18 @@ A parcel-sorting belt run as a Google ADK workflow. Each parcel needs a decision
 | 1 · You sort | `/?mode=you&limit=8&sec=2` | You sort parcels by hand, 2 s each, then compare with Jev |
 | 2 · Head to head | `/?mode=h2h&limit=10&pace=1&calib=1` | Jev vs Gemini (and optionally Gemma 4 12B): same photo, same question, same moment |
 | 3 · The team | `/?mode=workflow&set=r3&pace=1` | Jev + Gemini + code rules as one ADK workflow, with a human desk |
+
+**Round 1 · You sort.** 2 seconds per parcel, and the belt doesn't wait.
+
+![Round 1: you sort](docs/round1-you-sort.jpg)
+
+**Round 2 · Head to head.** Jev, Gemini and Gemma 4 12B get the same photo and question at the same moment.
+
+![Round 2: Jev vs Gemini vs Gemma 4](docs/round2-head-to-head.jpg)
+
+**Round 3 · End of shift.** The scorecard, plus a report written by Gemini.
+
+![Round 3: scorecard](docs/round3-scorecard.jpg)
 
 ## Run it
 
