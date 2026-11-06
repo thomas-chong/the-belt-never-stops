@@ -1,0 +1,53 @@
+{
+ "source": "Seeded test cases for the safety gate, built by context from the real photos (not part of the 30-photo belt).",
+ "parcels": [
+  {
+   "id": "P-S01",
+   "file": "photos/seeded/P-S01.jpg",
+   "declared": "Cotton T-shirts",
+   "kind": "torn (damage out of frame)",
+   "fragile_sticker": true,
+   "sticker": "FRAGILE (Handle with care)",
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   },
+   "seeded": true,
+   "notes": "Crop of P-0125 (x 0-430, y 0-335 of the 768x512 photo, then resized to 768 px): the camera sees the FRAGILE side; the torn corner with packing peanuts is outside the frame. The parcel IS torn, so the answer key is hold. Declared contents changed from 'Wine glasses, 2' to 'Cotton T-shirts' (a misdeclared or careless manifest line). Jev gets only the photo and the declared contents; the FRAGILE mark reaches the gate as handling context (from the manifest's sticker field, standing in for a label/marks scan).",
+   "why": "Found by probing: live Jev 1.14 said ship with confidence 0.91 (P(damaged) 0.05, risk 0.21) on 2026-10-30. The old single-threshold gate (auto >= 0.80) ships it to a customer.",
+   "credit": {
+    "title": "Brown cardboard box with red and white label",
+    "author": "RDNE Stock project",
+    "license": "Pexels License",
+    "url": "https://www.pexels.com/photo/brown-cardboard-box-with-red-and-white-label-7362844/",
+    "site": "Pexels",
+    "modified": "crop of photos/real/P-0125.jpg (x 0-430, y 0-335), resized to 768 px long side, JPEG q88"
+   }
+  },
+  {
+   "id": "P-S02",
+   "file": "photos/seeded/P-S02.jpg",
+   "declared": "Wool socks",
+   "kind": "clean (marks vs declared)",
+   "fragile_sticker": true,
+   "sticker": "FRAGILE + keep-dry + this-way-up icons",
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "seeded": true,
+   "notes": "Same photo as P-0128 (closed, intact box at a door with a small FRAGILE label). Declared contents changed from 'Glass candle jars' to 'Wool socks'. The gate's marks_vs_declared rule sends it to a person: the box says FRAGILE, the manifest line does not explain why. The box is intact, so the answer key is ship.",
+   "why": "A clean human-desk case for Round 3 whose answer key is not debatable (replaces P-0112, P-0114 and P-0130 in set r3, 2026-11-06).",
+   "credit": {
+    "title": "A brown cardboard box beside white door",
+    "author": "Tima Miroshnichenko",
+    "license": "Pexels License",
+    "url": "https://www.pexels.com/photo/a-brown-cardboard-box-beside-white-door-6170463/",
+    "site": "Pexels",
+    "modified": "copy of photos/real/P-0128.jpg; declared contents changed"
+   }
+  }
+ ]
+}

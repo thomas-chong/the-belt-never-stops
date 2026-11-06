@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The belt never stops</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 rx=%223%22 fill=%22%231f2342%22/%3E%3Crect x=%223%22 y=%2210%22 width=%2210%22 height=%223%22 fill=%22%234285f4%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/belt.css">
+</head>
+<body data-mode="workflow">
+
+<header class="head">
+  <div class="crumb">DevFest Brooklyn 2026 · <span id="crumb-mode">Google ADK Workflow · Jev 1.14 + Gemini</span></div>
+  <div class="band"><h1>The belt never stops</h1></div>
+  <div class="stripes"><i class="b"></i><i class="r"></i><i class="y"></i><i class="g"></i></div>
+</header>
+
+<section class="toolbar">
+  <nav class="modes" id="modes">
+    <button data-mode="you"><kbd>1</kbd> You sort</button>
+    <button data-mode="workflow" class="on"><kbd>3</kbd> Workflow sorts</button>
+  </nav>
+  <div class="tools">
+    <button id="t-inspect" class="tool jev"><kbd>I</kbd> Inspector</button>
+    <button id="t-context" class="tool"><kbd>C</kbd> Context test</button>
+    <button id="t-policy" class="tool"><kbd>P</kbd> Policy</button>
+  </div>
+  <div class="right">
+    <span class="polchip" id="polchip" title="policy in force (belt/policy.py)">policy: Standard rules</span>
+    <select id="pace" class="pace" title="seconds the belt waits between parcels (BELT_TICK_SECONDS)"><option value="1">pace 1.0 s</option><option value="0.4">pace 0.4 s</option><option value="0">pace 0 s</option></select>
+    <span id="livebadge" class="badge idle" title="set by the server from the last model call">no calls yet</span>
+    <button id="go" class="go">START</button>
+  </div>
+</section>
+
+<section class="counters">
+  <div class="tile"><b id="c-parcels">0</b><span>parcels</span></div>
+  <div class="tile jev"><b id="c-ms">–</b><span id="c-ms-l">ms per decision (Jev)</span></div>
+  <div class="tile jev"><b id="c-cost">$0</b><span>Jev cost so far</span></div>
+  <div class="tile gem"><b id="c-claims">0</b><span>claims filed</span></div>
+  <div class="tile state"><b id="c-near">0</b><span>near-miss ships</span></div>
+  <div class="tile"><b id="c-correct">–</b><span>correct or safe</span></div>
+  <div class="tile gem"><b id="c-gem">0</b><span>Gemini calls · <em id="c-gtok">0</em> tok</span></div>
+</section>
+
+<main class="stage">
+  <section class="left">
+    <div class="belt box" id="belt">
+      <span id="status" class="status">ready</span>
+      <div class="rollers"></div>
+      <div class="scanner" id="scanner"><span>CAMERA → Jev</span></div>
+      <div class="lanes" id="lanes">
+        <div class="lane ship" data-a="ship"><b>SHIP</b><i>0</i></div>
+        <div class="lane spot_check" data-a="spot_check"><b>SPOT CHECK</b><i>0</i></div>
+        <div class="lane retape" data-a="retape"><b>RETAPE</b><i>0</i></div>
+        <div class="lane hold" data-a="hold"><b>HOLD</b><i>0</i></div>
+        <div class="lane return" data-a="return"><b>RETURN</b><i>0</i></div>
+        <div class="lane file_claim" data-a="file_claim"><b>FILE CLAIM</b><i>0</i></div>
+      </div>
+      <div class="parcels" id="parcels"></div>
+    </div>
+
+    <div class="parcel box" id="parcelpanel">
+      <div class="photo" id="photo">
+        <img id="photo-img" alt="">
+        <div class="boxov" id="boxov" hidden><span id="boxconf"></span></div>
+        <div class="stamp" id="stamp" hidden></div>
+        <div class="pid" id="pid">–</div>
+        <div id="jevmeta" class="jevmeta"></div>
+      </div>
+      <div class="bars">
+        <div class="ptop"><span class="declared" id="declared">Declared contents: –</span></div>
+        <div id="probs" class="probs"></div>
+        <div class="conf">
+          <span class="clabel">confidence <b id="confv">–</b></span>
+          <div class="track"><div class="fill" id="conff"></div>
+            <span class="mark m40" title="TRUST_CONFIDENCE"><em>0.40</em></span><span class="mark m80" title="AUTO_SHIP"><em>0.80</em></span></div>
+        </div>
+        <div class="why" id="why">choose() in code: confidence &lt; 0.40 + severe → hold · ship &lt; 0.80 → spot check · claim ready + damaged → file claim · fragile → never just retape</div>
+      </div>
+      <div class="history" id="history" title="click a past parcel to inspect its own request and response"></div>
+    </div>
+
+    <div class="manual box" id="manual" hidden>
+      <button data-a="ship"><kbd>S</kbd> SHIP</button>
+      <button data-a="retape"><kbd>R</kbd> RETAPE</button>
+      <button data-a="hold"><kbd>H</kbd> HOLD</button>
+      <button data-a="return"><kbd>X</kbd> RETURN</button>
+      <div class="timer"><div id="mtimer"></div></div>
+    </div>
+
+  </section>
+
+  <section class="right">
+    <div class="graph box">
+      <h3>Google ADK Workflow <small>nodes light up from live ADK events</small></h3>
+      <svg id="graph" viewBox="0 0 734 286"></svg>
+    </div>
+    <div class="gemini box" id="gemini">
+      <div class="glabel"><img id="glabel" alt=""><span id="gsmudge" hidden>smudged on purpose</span></div>
+      <div class="gbody">
+        <div class="ghead"><span class="gdot"></span><b id="gname">claims_clerk</b><span id="gbadge" class="badge sm idle">idle</span><span id="gstate">waiting for a damaged parcel</span><span id="gtime"></span></div>
+        <div class="gthought" id="gthought"></div>
+        <div class="gboxhead" id="gboxhead">Gemini output, streamed as it arrives</div>
+        <pre class="gjson" id="gjson"></pre>
+        <div class="gverdict" id="gverdict"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="bottom">
+  <div class="timeline box">
+    <div class="tl-head"><b>Two speeds, one run</b><span>Jev ticks (~0.1 s) never wait for Gemini calls (seconds)</span></div>
+    <svg id="timeline" viewBox="0 0 1110 132" preserveAspectRatio="none"></svg>
+  </div>
+  <div class="calllog box">
+    <div class="cl-head"><b>Call log</b><span>from the server · every Jev and Gemini call · click a row</span></div>
+    <div class="cl-rows" id="calllog"></div>
+  </div>
+</section>
+
+<footer class="foot">
+  <span class="credit" id="credit">Photos: loading…</span>
+  <span class="keys"><kbd>I</kbd> inspector · <kbd>C</kbd> context test · <kbd>P</kbd> policy · <kbd>Esc</kbd> close</span>
+</footer>
+<div class="gbar"><i class="b"></i><i class="r"></i><i class="y"></i><i class="g"></i></div>
+
+<!-- Inspector: the exact HTTP request Jev received and the verbatim response -->
+<aside class="drawer" id="inspector" hidden>
+  <div class="dhead">
+    <h2>Inspector</h2>
+    <span id="i-badge" class="badge">–</span>
+    <span id="i-title" class="ititle">–</span>
+    <button id="i-follow" class="follow on" title="follow the parcel at the camera">following live</button>
+    <button class="x" data-close="inspector">×</button>
+  </div>
+  <div class="istats" id="i-stats"></div>
+  <div class="ibody" id="i-body"><p class="muted">Start a run, or click a parcel or a call.</p></div>
+</aside>
+
+<!-- Context test: same photo, two declared contents -->
+<div class="overlay" id="context" hidden>
+  <div class="sheet">
+    <div class="shead"><h2>Context test <small>same photo · two declared contents · two live Jev calls at once · same policy, same code</small></h2><button class="x" data-close="context">×</button></div>
+    <div class="ctx">
+      <div class="ctx-left">
+        <div class="pick" id="ctx-pick"></div>
+        <img id="ctx-img" class="ctx-img" alt="">
+        <label>A · declared contents <input id="ctx-a" value="Paperback books, 3"></label>
+        <label>B · declared contents <input id="ctx-b" value="Glass vase, 2 pcs"></label>
+        <button id="ctx-run" class="go">RUN BOTH</button>
+      </div>
+      <div class="ctx-right">
+        <div class="side" id="ctx-A"></div>
+        <div class="side" id="ctx-B"></div>
+        <p class="yolo" id="ctx-note">A fixed-class detector sees the same pixels and gives the same boxes for both. Here the decision depends on the words.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Policy editor: the option descriptions Jev chooses between -->
+<div class="overlay" id="policy" hidden>
+  <div class="sheet">
+    <div class="shead"><h2>Policy <small>the words Jev chooses between · edit, Apply, the next call uses them</small></h2><button class="x" data-close="policy">×</button></div>
+    <div class="pol">
+      <div class="pol-left">
+        <div class="presets" id="presets"></div>
+        <div class="opts" id="opts"></div>
+        <div class="applyrow"><button id="pol-apply" class="go">APPLY</button><span id="pol-msg" class="polmsg"></span></div>
+        <div class="counter" id="pol-counter">training images: <b>0</b> · retraining: <b>none</b> · rule changed in <b id="pol-secs">–</b><small id="pol-secs-l" class="muted" style="font-size:19px"></small></div>
+      </div>
+      <div class="pol-right">
+        <pre class="code" id="pol-code"></pre>
+        <div class="probe">
+          <div class="probehead"><b>Probe photo</b> <span id="probe-pick" class="probepick"></span></div>
+          <div class="probebody"><img id="probe-img" alt=""><div class="ba"><div id="probe-before" class="pb"></div><div id="probe-after" class="pb"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="final" id="final" hidden>
+  <div class="card">
+    <h2>End of shift</h2>
+    <div class="score" id="score"></div>
+    <div class="report">
+      <h3><span class="gdot"></span> shift_lead (Gemini) <small id="rstate"></small></h3>
+      <h4 id="rhead"></h4>
+      <p id="rbody"></p>
+    </div>
+    <p class="hint">Press <kbd>Esc</kbd> to close</p>
+  </div>
+</div>
+
+<script src="/static/belt.js"></script>
+</body>
+</html>

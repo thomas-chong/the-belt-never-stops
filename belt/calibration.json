@@ -1,0 +1,715 @@
+{
+ "source": "30 live Jev calls (jev-1.14.0) on 2026-10-30, Standard policy, real photos",
+ "n": 30,
+ "alpha": 0.02,
+ "n_min": 3,
+ "abstain": 0.4,
+ "per_action": {
+  "ship": {
+   "n_choice": 18,
+   "data_bar": 0.31,
+   "data_covered": 18,
+   "data_ucb95": 0.1533,
+   "proven": false,
+   "design": 0.9,
+   "floor": 0.8,
+   "in_force": 0.9,
+   "why": "upper bound > alpha (too few parcels): data may only tighten the design bar",
+   "covered": 4,
+   "errors": 0,
+   "risk": 0.0,
+   "ucb95": 0.5271,
+   "harmful_in_choice": 0
+  },
+  "retape": {
+   "n_choice": 3,
+   "data_bar": 0.6,
+   "data_covered": 3,
+   "data_ucb95": 0.6316,
+   "proven": false,
+   "design": 0.85,
+   "floor": 0.7,
+   "in_force": 0.85,
+   "why": "upper bound > alpha (too few parcels): data may only tighten the design bar",
+   "covered": 0,
+   "errors": 0,
+   "risk": null,
+   "ucb95": null,
+   "harmful_in_choice": 0
+  },
+  "hold": {
+   "n_choice": 9,
+   "data_bar": 0.17,
+   "data_covered": 9,
+   "data_ucb95": 0.2831,
+   "proven": false,
+   "design": 0.5,
+   "floor": 0.4,
+   "in_force": 0.5,
+   "why": "upper bound > alpha (too few parcels): data may only tighten the design bar",
+   "covered": 6,
+   "errors": 0,
+   "risk": 0.0,
+   "ucb95": 0.393,
+   "harmful_in_choice": 0
+  }
+ },
+ "in_force": {
+  "ship": 0.9,
+  "retape": 0.85,
+  "hold": 0.5
+ },
+ "gate": {
+  "lanes": {
+   "auto": 10,
+   "gemini": 15,
+   "human": 5
+  },
+  "coverage": 0.333,
+  "auto_errors": 0,
+  "auto_error_rate": 0.0,
+  "auto_ucb95": 0.2589
+ },
+ "legacy": {
+  "auto": 12,
+  "coverage": 0.4,
+  "auto_errors": 0
+ },
+ "n_needed_for_alpha": 149,
+ "rows": [
+  {
+   "id": "P-0101",
+   "choice": "ship",
+   "confidence": 0.91,
+   "truth": "ship",
+   "lane": "auto",
+   "rule": "auto_ship",
+   "legacy_lane": "auto",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0102",
+   "choice": "ship",
+   "confidence": 0.87,
+   "truth": "ship",
+   "lane": "gemini",
+   "rule": "below_ship_bar",
+   "legacy_lane": "auto",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0103",
+   "choice": "ship",
+   "confidence": 0.61,
+   "truth": "ship",
+   "lane": "gemini",
+   "rule": "below_ship_bar",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0104",
+   "choice": "ship",
+   "confidence": 0.92,
+   "truth": "ship",
+   "lane": "auto",
+   "rule": "auto_ship",
+   "legacy_lane": "auto",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0105",
+   "choice": "hold",
+   "confidence": 0.96,
+   "truth": "hold",
+   "lane": "auto",
+   "rule": "auto_hold",
+   "legacy_lane": "auto",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0106",
+   "choice": "retape",
+   "confidence": 0.6,
+   "truth": "retape",
+   "lane": "gemini",
+   "rule": "below_retape_bar",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0107",
+   "choice": "ship",
+   "confidence": 0.89,
+   "truth": "ship",
+   "lane": "gemini",
+   "rule": "below_ship_bar",
+   "legacy_lane": "auto",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0108",
+   "choice": "hold",
+   "confidence": 0.64,
+   "truth": "hold",
+   "lane": "auto",
+   "rule": "auto_hold",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0109",
+   "choice": "hold",
+   "confidence": 0.75,
+   "truth": "hold",
+   "lane": "auto",
+   "rule": "auto_hold",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0110",
+   "choice": "ship",
+   "confidence": 0.72,
+   "truth": "ship",
+   "lane": "gemini",
+   "rule": "below_ship_bar",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0111",
+   "choice": "ship",
+   "confidence": 0.97,
+   "truth": "ship",
+   "lane": "auto",
+   "rule": "auto_ship",
+   "legacy_lane": "auto",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0112",
+   "choice": "hold",
+   "confidence": 0.32,
+   "truth": "hold",
+   "lane": "human",
+   "rule": "abstain_low_confidence",
+   "legacy_lane": "human",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0113",
+   "choice": "ship",
+   "confidence": 0.95,
+   "truth": "ship",
+   "lane": "auto",
+   "rule": "auto_ship",
+   "legacy_lane": "auto",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0114",
+   "choice": "hold",
+   "confidence": 0.17,
+   "truth": "ship",
+   "lane": "human",
+   "rule": "abstain_low_confidence",
+   "legacy_lane": "human",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0115",
+   "choice": "hold",
+   "confidence": 0.92,
+   "truth": "hold",
+   "lane": "auto",
+   "rule": "auto_hold",
+   "legacy_lane": "auto",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0116",
+   "choice": "ship",
+   "confidence": 0.53,
+   "truth": "ship",
+   "lane": "gemini",
+   "rule": "below_ship_bar",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0117",
+   "choice": "retape",
+   "confidence": 0.81,
+   "truth": "retape",
+   "lane": "gemini",
+   "rule": "below_retape_bar",
+   "legacy_lane": "auto",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0118",
+   "choice": "hold",
+   "confidence": 0.91,
+   "truth": "hold",
+   "lane": "auto",
+   "rule": "auto_hold",
+   "legacy_lane": "auto",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0119",
+   "choice": "ship",
+   "confidence": 0.75,
+   "truth": "ship",
+   "lane": "gemini",
+   "rule": "below_ship_bar",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0120",
+   "choice": "ship",
+   "confidence": 0.36,
+   "truth": "ship",
+   "lane": "human",
+   "rule": "abstain_low_confidence",
+   "legacy_lane": "human",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0121",
+   "choice": "ship",
+   "confidence": 0.63,
+   "truth": "ship",
+   "lane": "gemini",
+   "rule": "below_ship_bar",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0122",
+   "choice": "ship",
+   "confidence": 0.68,
+   "truth": "ship",
+   "lane": "gemini",
+   "rule": "below_ship_bar",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0123",
+   "choice": "hold",
+   "confidence": 0.33,
+   "truth": "hold",
+   "lane": "human",
+   "rule": "abstain_low_confidence",
+   "legacy_lane": "human",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0124",
+   "choice": "ship",
+   "confidence": 0.61,
+   "truth": "ship",
+   "lane": "gemini",
+   "rule": "below_ship_bar",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0125",
+   "choice": "hold",
+   "confidence": 0.97,
+   "truth": "hold",
+   "lane": "auto",
+   "rule": "auto_hold",
+   "legacy_lane": "auto",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0126",
+   "choice": "ship",
+   "confidence": 0.75,
+   "truth": "ship",
+   "lane": "gemini",
+   "rule": "below_ship_bar",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0127",
+   "choice": "retape",
+   "confidence": 0.64,
+   "truth": "retape",
+   "lane": "gemini",
+   "rule": "below_retape_bar",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0128",
+   "choice": "ship",
+   "confidence": 0.57,
+   "truth": "ship",
+   "lane": "gemini",
+   "rule": "fragile_no_auto_ship",
+   "legacy_lane": "gemini",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0129",
+   "choice": "ship",
+   "confidence": 0.88,
+   "truth": "ship",
+   "lane": "gemini",
+   "rule": "below_ship_bar",
+   "legacy_lane": "auto",
+   "auto_error": false,
+   "legacy_auto_error": false
+  },
+  {
+   "id": "P-0130",
+   "choice": "ship",
+   "confidence": 0.31,
+   "truth": "ship",
+   "lane": "human",
+   "rule": "abstain_low_confidence",
+   "legacy_lane": "human",
+   "auto_error": false,
+   "legacy_auto_error": false
+  }
+ ],
+ "note": "30 labelled photos is far too few for a guarantee: with 0 mistakes in n covered parcels the 95% upper bound on the error rate is about 3/n, so alpha=2% needs about 149 covered parcels per action with no mistake. So here the data can only tighten the design bars, never loosen them. In production use conformal / selective risk control (Learn-then-Test, 'Trust or Escalate', Jung et al. 2024) on a large labelled set; its guarantee holds only while new parcels look like the calibration set (it breaks under distribution shift), so keep the audit sample and the drift alarm on.",
+ "created": "2026-10-30 05:41",
+ "samples": [
+  {
+   "id": "P-0101",
+   "choice": "ship",
+   "confidence": 0.91,
+   "damaged": 0.06,
+   "risk": 0.17,
+   "truth": "ship",
+   "declared": "Paperback books, 3",
+   "handling": ""
+  },
+  {
+   "id": "P-0102",
+   "choice": "ship",
+   "confidence": 0.87,
+   "damaged": 0.1,
+   "risk": 0.24,
+   "truth": "ship",
+   "declared": "Phone case",
+   "handling": ""
+  },
+  {
+   "id": "P-0103",
+   "choice": "ship",
+   "confidence": 0.61,
+   "damaged": 0.45,
+   "risk": 0.79,
+   "truth": "ship",
+   "declared": "Hoodie",
+   "handling": ""
+  },
+  {
+   "id": "P-0104",
+   "choice": "ship",
+   "confidence": 0.92,
+   "damaged": 0.07,
+   "risk": 0.19,
+   "truth": "ship",
+   "declared": "Cotton T-shirts",
+   "handling": ""
+  },
+  {
+   "id": "P-0105",
+   "choice": "hold",
+   "confidence": 0.96,
+   "damaged": 0.84,
+   "risk": 1.42,
+   "truth": "hold",
+   "declared": "Ceramic mugs, set of 4",
+   "handling": "FRAGILE mark on the box"
+  },
+  {
+   "id": "P-0106",
+   "choice": "retape",
+   "confidence": 0.6,
+   "damaged": 0.12,
+   "risk": 0.28,
+   "truth": "retape",
+   "declared": "Kitchen towels",
+   "handling": ""
+  },
+  {
+   "id": "P-0107",
+   "choice": "ship",
+   "confidence": 0.89,
+   "damaged": 0.05,
+   "risk": 0.16,
+   "truth": "ship",
+   "declared": "Coffee beans, 1 kg",
+   "handling": ""
+  },
+  {
+   "id": "P-0108",
+   "choice": "hold",
+   "confidence": 0.64,
+   "damaged": 0.39,
+   "risk": 0.91,
+   "truth": "hold",
+   "declared": "Ceramic plates, 6",
+   "handling": "FRAGILE mark on the box"
+  },
+  {
+   "id": "P-0109",
+   "choice": "hold",
+   "confidence": 0.75,
+   "damaged": 0.55,
+   "risk": 1.23,
+   "truth": "hold",
+   "declared": "Glass vase",
+   "handling": "FRAGILE (Handle with care) mark on the box"
+  },
+  {
+   "id": "P-0110",
+   "choice": "ship",
+   "confidence": 0.72,
+   "damaged": 0.11,
+   "risk": 0.41,
+   "truth": "ship",
+   "declared": "Desk lamp, boxed",
+   "handling": ""
+  },
+  {
+   "id": "P-0111",
+   "choice": "ship",
+   "confidence": 0.97,
+   "damaged": 0.04,
+   "risk": 0.14,
+   "truth": "ship",
+   "declared": "Hardcover book",
+   "handling": ""
+  },
+  {
+   "id": "P-0112",
+   "choice": "hold",
+   "confidence": 0.32,
+   "damaged": 0.82,
+   "risk": 1.68,
+   "truth": "hold",
+   "declared": "Brass pipe fittings, 100",
+   "handling": ""
+  },
+  {
+   "id": "P-0113",
+   "choice": "ship",
+   "confidence": 0.95,
+   "damaged": 0.04,
+   "risk": 0.15,
+   "truth": "ship",
+   "declared": "Board game",
+   "handling": ""
+  },
+  {
+   "id": "P-0114",
+   "choice": "hold",
+   "confidence": 0.17,
+   "damaged": 0.5,
+   "risk": 1.04,
+   "truth": "ship",
+   "declared": "Plastic storage bins",
+   "handling": ""
+  },
+  {
+   "id": "P-0115",
+   "choice": "hold",
+   "confidence": 0.92,
+   "damaged": 0.94,
+   "risk": 1.63,
+   "truth": "hold",
+   "declared": "Bottled water, 24",
+   "handling": ""
+  },
+  {
+   "id": "P-0116",
+   "choice": "ship",
+   "confidence": 0.53,
+   "damaged": 0.15,
+   "risk": 0.33,
+   "truth": "ship",
+   "declared": "Bedding set",
+   "handling": ""
+  },
+  {
+   "id": "P-0117",
+   "choice": "retape",
+   "confidence": 0.81,
+   "damaged": 0.15,
+   "risk": 0.62,
+   "truth": "retape",
+   "declared": "Running shoes",
+   "handling": ""
+  },
+  {
+   "id": "P-0118",
+   "choice": "hold",
+   "confidence": 0.91,
+   "damaged": 0.93,
+   "risk": 1.3,
+   "truth": "hold",
+   "declared": "Bluetooth speaker",
+   "handling": ""
+  },
+  {
+   "id": "P-0119",
+   "choice": "ship",
+   "confidence": 0.75,
+   "damaged": 0.12,
+   "risk": 0.4,
+   "truth": "ship",
+   "declared": "Wool sweater",
+   "handling": ""
+  },
+  {
+   "id": "P-0120",
+   "choice": "ship",
+   "confidence": 0.36,
+   "damaged": 0.1,
+   "risk": 0.24,
+   "truth": "ship",
+   "declared": "Wall mirror",
+   "handling": "FRAGILE MIRROR GLASS / DO NOT LAY FLAT (printed) mark on the box"
+  },
+  {
+   "id": "P-0121",
+   "choice": "ship",
+   "confidence": 0.63,
+   "damaged": 0.09,
+   "risk": 0.19,
+   "truth": "ship",
+   "declared": "Notebook set",
+   "handling": ""
+  },
+  {
+   "id": "P-0122",
+   "choice": "ship",
+   "confidence": 0.68,
+   "damaged": 0.18,
+   "risk": 0.36,
+   "truth": "ship",
+   "declared": "Sneakers",
+   "handling": ""
+  },
+  {
+   "id": "P-0123",
+   "choice": "hold",
+   "confidence": 0.33,
+   "damaged": 0.23,
+   "risk": 0.62,
+   "truth": "hold",
+   "declared": "Teapot, ceramic",
+   "handling": "FRAGILE mark on the box"
+  },
+  {
+   "id": "P-0124",
+   "choice": "ship",
+   "confidence": 0.61,
+   "damaged": 0.19,
+   "risk": 0.58,
+   "truth": "ship",
+   "declared": "Yoga mat",
+   "handling": ""
+  },
+  {
+   "id": "P-0125",
+   "choice": "hold",
+   "confidence": 0.97,
+   "damaged": 0.67,
+   "risk": 1.09,
+   "truth": "hold",
+   "declared": "Wine glasses, 2",
+   "handling": "FRAGILE (Handle with care) mark on the box"
+  },
+  {
+   "id": "P-0126",
+   "choice": "ship",
+   "confidence": 0.75,
+   "damaged": 0.17,
+   "risk": 0.33,
+   "truth": "ship",
+   "declared": "Disc golf discs",
+   "handling": ""
+  },
+  {
+   "id": "P-0127",
+   "choice": "retape",
+   "confidence": 0.64,
+   "damaged": 0.31,
+   "risk": 0.73,
+   "truth": "retape",
+   "declared": "Wool socks",
+   "handling": ""
+  },
+  {
+   "id": "P-0128",
+   "choice": "ship",
+   "confidence": 0.57,
+   "damaged": 0.03,
+   "risk": 0.16,
+   "truth": "ship",
+   "declared": "Glass candle jars",
+   "handling": "FRAGILE + keep-dry + this-way-up icons mark on the box"
+  },
+  {
+   "id": "P-0129",
+   "choice": "ship",
+   "confidence": 0.88,
+   "damaged": 0.06,
+   "risk": 0.19,
+   "truth": "ship",
+   "declared": "Desk organiser",
+   "handling": ""
+  },
+  {
+   "id": "P-0130",
+   "choice": "ship",
+   "confidence": 0.31,
+   "damaged": 0.08,
+   "risk": 0.26,
+   "truth": "ship",
+   "declared": "Picture frame, glass front",
+   "handling": "FRAGILE (Please handle with care) mark on the box"
+  }
+ ]
+}

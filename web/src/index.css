@@ -1,0 +1,204 @@
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/jetbrains-mono";
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/*
+ * Belt demo tokens. Light theme only (projector), calm neutral greys,
+ * one accent per role:
+ *   Jev (reflex)              -> teal
+ *   Gemini (clerk / teacher)  -> violet
+ *   ADK / code (gates)        -> slate (neutral)
+ *   Human                     -> amber
+ * Status colours (allowed / blocked) are separate from the role colours.
+ */
+:root {
+  --radius: 0.625rem;
+
+  --background: oklch(0.975 0.003 250);
+  --foreground: oklch(0.22 0.012 255);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--foreground);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--foreground);
+  --muted: oklch(0.955 0.004 250);
+  --muted-foreground: oklch(0.48 0.014 255);
+  --secondary: oklch(0.945 0.005 250);
+  --secondary-foreground: var(--foreground);
+  --accent: oklch(0.94 0.006 250);
+  --accent-foreground: var(--foreground);
+  --border: oklch(0.9 0.006 250);
+  --input: oklch(0.88 0.008 250);
+  --ring: oklch(0.55 0.02 255);
+
+  /* primary = ADK slate: the neutral "code / floor manager" ink */
+  --primary: oklch(0.32 0.025 255);
+  --primary-foreground: oklch(0.98 0.003 250);
+
+  --destructive: oklch(0.55 0.2 25);
+  --success: oklch(0.56 0.13 150);
+  --success-muted: oklch(0.955 0.04 150);
+  --success-foreground: oklch(0.38 0.1 150);
+  --warning: oklch(0.72 0.15 75);
+  --warning-muted: oklch(0.965 0.045 85);
+  --warning-foreground: oklch(0.45 0.11 65);
+  --error: oklch(0.55 0.2 25);
+  --error-muted: oklch(0.96 0.03 25);
+  --error-foreground: oklch(0.45 0.17 25);
+  --info: oklch(0.55 0.02 255);
+  --info-muted: oklch(0.95 0.008 255);
+  --info-foreground: oklch(0.38 0.02 255);
+
+  /* role accents */
+  --jev: oklch(0.56 0.105 195);
+  --jev-soft: oklch(0.96 0.03 195);
+  --jev-ink: oklch(0.4 0.08 200);
+  --gemini: oklch(0.52 0.17 295);
+  --gemini-soft: oklch(0.96 0.03 295);
+  --gemini-ink: oklch(0.42 0.16 295);
+  --gemma: oklch(0.55 0.16 250);
+  --gemma-soft: oklch(0.96 0.025 250);
+  --gemma-ink: oklch(0.42 0.14 255);
+  --adk: oklch(0.45 0.025 255);
+  --adk-soft: oklch(0.95 0.008 255);
+  --adk-ink: oklch(0.32 0.025 255);
+  --human: oklch(0.72 0.15 75);
+  --human-soft: oklch(0.965 0.045 85);
+  --human-ink: oklch(0.45 0.11 65);
+
+  --output: var(--jev);
+
+  /* Gemini jobs (mode 3): one hue family, four clearly different shades */
+  --job-decision: oklch(0.45 0.19 295);
+  --job-clerk: oklch(0.62 0.19 345);
+  --job-report: oklch(0.6 0.11 255);
+  --job-teacher: oklch(0.74 0.12 315);
+}
+
+@theme inline {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-success-muted: var(--success-muted);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-muted: var(--warning-muted);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-error: var(--error);
+  --color-error-muted: var(--error-muted);
+  --color-error-foreground: var(--error-foreground);
+  --color-info: var(--info);
+  --color-info-muted: var(--info-muted);
+  --color-info-foreground: var(--info-foreground);
+  --color-output: var(--output);
+
+  --color-jev: var(--jev);
+  --color-jev-soft: var(--jev-soft);
+  --color-jev-ink: var(--jev-ink);
+  --color-gemini: var(--gemini);
+  --color-gemini-soft: var(--gemini-soft);
+  --color-gemini-ink: var(--gemini-ink);
+  --color-gemma: var(--gemma);
+  --color-gemma-soft: var(--gemma-soft);
+  --color-gemma-ink: var(--gemma-ink);
+  --color-adk: var(--adk);
+  --color-adk-soft: var(--adk-soft);
+  --color-adk-ink: var(--adk-ink);
+  --color-human: var(--human);
+  --color-human-soft: var(--human-soft);
+  --color-human-ink: var(--human-ink);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv11", "ss01", "tnum";
+    overflow: hidden;
+  }
+  kbd {
+    @apply font-mono;
+    font-size: 0.8em;
+    padding: 0 0.35em;
+    border: 1px solid var(--border);
+    border-bottom-width: 2px;
+    border-radius: 4px;
+    background: var(--card);
+    color: var(--muted-foreground);
+  }
+}
+
+/* parcel chip entering a lane */
+@keyframes lane-in {
+  from {
+    transform: translateX(-60px) scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.lane-in {
+  animation: lane-in 420ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes flash {
+  0% {
+    box-shadow: 0 0 0 0 var(--flash, var(--ring));
+  }
+  100% {
+    box-shadow: 0 0 0 10px transparent;
+  }
+}
+.flash {
+  animation: flash 700ms ease-out;
+}
+@keyframes caret {
+  50% {
+    opacity: 0;
+  }
+}
+.caret::after {
+  content: "▍";
+  margin-left: 2px;
+  animation: caret 1s steps(1) infinite;
+  color: var(--gemini);
+}
+@media (prefers-reduced-motion: reduce) {
+  .lane-in,
+  .flash,
+  .caret::after {
+    animation: none;
+  }
+}

@@ -1,0 +1,365 @@
+{
+ "source": "synthetic placeholder (belt/photos.py)",
+ "parcels": [
+  {
+   "id": "P-0101",
+   "file": "photos/placeholder/P-0101.jpg",
+   "declared": "Paperback books, 3",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0102",
+   "file": "photos/placeholder/P-0102.jpg",
+   "declared": "Cotton T-shirts",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0103",
+   "file": "photos/placeholder/P-0103.jpg",
+   "declared": "Plastic storage bins",
+   "kind": "dented",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 1,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0104",
+   "file": "photos/placeholder/P-0104.jpg",
+   "declared": "Board game",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0105",
+   "file": "photos/placeholder/P-0105.jpg",
+   "declared": "Ceramic mugs, set of 4",
+   "kind": "crushed",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   }
+  },
+  {
+   "id": "P-0106",
+   "file": "photos/placeholder/P-0106.jpg",
+   "declared": "Kitchen towels",
+   "kind": "open_tape",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "retape",
+    "risk": 1,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0107",
+   "file": "photos/placeholder/P-0107.jpg",
+   "declared": "Running shoes",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0108",
+   "file": "photos/placeholder/P-0108.jpg",
+   "declared": "Ceramic plates, 6",
+   "kind": "fragile",
+   "fragile_sticker": true,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0109",
+   "file": "photos/placeholder/P-0109.jpg",
+   "declared": "Picture frame, glass front",
+   "kind": "torn",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   }
+  },
+  {
+   "id": "P-0110",
+   "file": "photos/placeholder/P-0110.jpg",
+   "declared": "Desk lamp, boxed",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0111",
+   "file": "photos/placeholder/P-0111.jpg",
+   "declared": "Desk monitor, 27 inch",
+   "kind": "ambiguous",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0112",
+   "file": "photos/placeholder/P-0112.jpg",
+   "declared": "Hardcover books",
+   "kind": "wet",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   }
+  },
+  {
+   "id": "P-0113",
+   "file": "photos/placeholder/P-0113.jpg",
+   "declared": "Yoga mat",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0114",
+   "file": "photos/placeholder/P-0114.jpg",
+   "declared": "Hoodie",
+   "kind": "dented",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 1,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0115",
+   "file": "photos/placeholder/P-0115.jpg",
+   "declared": "Olive oil, 2 bottles",
+   "kind": "leaking",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "return",
+    "risk": 2,
+    "damaged": true
+   }
+  },
+  {
+   "id": "P-0116",
+   "file": "photos/placeholder/P-0116.jpg",
+   "declared": "Coffee beans, 1 kg",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0117",
+   "file": "photos/placeholder/P-0117.jpg",
+   "declared": "Phone case",
+   "kind": "open_tape",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "retape",
+    "risk": 1,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0118",
+   "file": "photos/placeholder/P-0118.jpg",
+   "declared": "Glass vase",
+   "kind": "crushed",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   }
+  },
+  {
+   "id": "P-0119",
+   "file": "photos/placeholder/P-0119.jpg",
+   "declared": "Paperback books, 3",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0120",
+   "file": "photos/placeholder/P-0120.jpg",
+   "declared": "Glass candle jars",
+   "kind": "fragile",
+   "fragile_sticker": true,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0121",
+   "file": "photos/placeholder/P-0121.jpg",
+   "declared": "Cotton T-shirts",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0122",
+   "file": "photos/placeholder/P-0122.jpg",
+   "declared": "Mixed groceries",
+   "kind": "ambiguous",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0123",
+   "file": "photos/placeholder/P-0123.jpg",
+   "declared": "Notebook set",
+   "kind": "dented",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 1,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0124",
+   "file": "photos/placeholder/P-0124.jpg",
+   "declared": "Board game",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0125",
+   "file": "photos/placeholder/P-0125.jpg",
+   "declared": "Wine glasses, 2",
+   "kind": "torn",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   }
+  },
+  {
+   "id": "P-0126",
+   "file": "photos/placeholder/P-0126.jpg",
+   "declared": "Running shoes",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0127",
+   "file": "photos/placeholder/P-0127.jpg",
+   "declared": "Wool socks",
+   "kind": "open_tape",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "retape",
+    "risk": 1,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0128",
+   "file": "photos/placeholder/P-0128.jpg",
+   "declared": "Bluetooth speaker",
+   "kind": "crushed",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   }
+  },
+  {
+   "id": "P-0129",
+   "file": "photos/placeholder/P-0129.jpg",
+   "declared": "Desk lamp, boxed",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   }
+  },
+  {
+   "id": "P-0130",
+   "file": "photos/placeholder/P-0130.jpg",
+   "declared": "Printer paper, 5 reams",
+   "kind": "wet",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   }
+  }
+ ]
+}

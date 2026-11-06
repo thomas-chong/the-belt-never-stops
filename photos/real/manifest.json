@@ -1,0 +1,1145 @@
+{
+ "source": "real photos (Wikimedia Commons, Pexels, Unsplash); see photos/real/CREDITS.md",
+ "parcels": [
+  {
+   "id": "P-0101",
+   "file": "photos/real/P-0101.jpg",
+   "declared": "Paperback books, 3",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Plain closed box, tape seam intact, studio backdrop.",
+   "credit": {
+    "title": "Large Cardboard Moving Box Taped Closed (32067345357).jpg",
+    "author": "HireAHelper",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Large_Cardboard_Moving_Box_Taped_Closed_(32067345357).jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.92,
+     "retape": 0.06,
+     "hold": 0.02,
+     "return": 0.0
+    },
+    "confidence": 0.89,
+    "damaged": 0.05,
+    "risk": 0.19,
+    "decision": "ship",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0102",
+   "file": "photos/real/P-0102.jpg",
+   "declared": "Phone case",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Small closed parcel seen from above, carrier label (addressee blurred by the photographer), coin for scale.",
+   "credit": {
+    "title": "Kleines paket.JPG",
+    "author": "Klaus Mueller",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Kleines_paket.JPG",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.9,
+     "retape": 0.04,
+     "hold": 0.06,
+     "return": 0.0
+    },
+    "confidence": 0.87,
+    "damaged": 0.11,
+    "risk": 0.27,
+    "decision": "ship",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0103",
+   "file": "photos/real/P-0103.jpg",
+   "declared": "Hoodie",
+   "kind": "dented",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 1,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Closed box on a road; scuffed edges and a creased corner, tape lifting slightly. Cosmetic only.",
+   "credit": {
+    "title": "Box on gray asphalt road",
+    "author": "Ekaterina Belinskaya",
+    "license": "Pexels License",
+    "url": "https://www.pexels.com/photo/box-on-gray-asphalt-road-4744743/",
+    "site": "Pexels",
+    "modified": "EXIF-rotated, cropped (0.2,0.35,0.85,0.95 of width/height), resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.69,
+     "retape": 0.04,
+     "hold": 0.27,
+     "return": 0.0
+    },
+    "confidence": 0.59,
+    "damaged": 0.52,
+    "risk": 0.81,
+    "decision": "spot_check",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0104",
+   "file": "photos/real/P-0104.jpg",
+   "declared": "Cotton T-shirts",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Closed box, front view, no visible damage.",
+   "credit": {
+    "title": "Large Cardboard Moving Box Taped Closed (47008644221).jpg",
+    "author": "HireAHelper",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Large_Cardboard_Moving_Box_Taped_Closed_(47008644221).jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.93,
+     "retape": 0.04,
+     "hold": 0.03,
+     "return": 0.0
+    },
+    "confidence": 0.91,
+    "damaged": 0.08,
+    "risk": 0.22,
+    "decision": "ship",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0105",
+   "file": "photos/real/P-0105.jpg",
+   "declared": "Ceramic mugs, set of 4",
+   "kind": "crushed",
+   "fragile_sticker": true,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   },
+   "sticker": "FRAGILE",
+   "notes": "Box badly crushed and sagging, walls caved in, tape torn. FRAGILE sticker.",
+   "credit": {
+    "title": "Damaged fragile parcel delivered to doorstep.jpg",
+    "author": "Meanwell Packaging",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Damaged_fragile_parcel_delivered_to_doorstep.jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "hold",
+    "probabilities": {
+     "ship": 0.01,
+     "retape": 0.02,
+     "hold": 0.97,
+     "return": 0.0
+    },
+    "confidence": 0.96,
+    "damaged": 0.83,
+    "risk": 1.38,
+    "decision": "hold",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0106",
+   "file": "photos/real/P-0106.jpg",
+   "declared": "Kitchen towels",
+   "kind": "open_tape",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "retape",
+    "risk": 1,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Box with all top flaps open, no tape on top.",
+   "credit": {
+    "title": "Open Cardboard Moving Box (32067347137).jpg",
+    "author": "HireAHelper",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Open_Cardboard_Moving_Box_(32067347137).jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "retape",
+    "probabilities": {
+     "ship": 0.21,
+     "retape": 0.68,
+     "hold": 0.1,
+     "return": 0.01
+    },
+    "confidence": 0.57,
+    "damaged": 0.12,
+    "risk": 0.29,
+    "decision": "retape",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0107",
+   "file": "photos/real/P-0107.jpg",
+   "declared": "Coffee beans, 1 kg",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Large closed box, tape seam intact, studio backdrop.",
+   "credit": {
+    "title": "Large Cardboard Moving Box Taped Closed (46499163674).jpg",
+    "author": "HireAHelper",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Large_Cardboard_Moving_Box_Taped_Closed_(46499163674).jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.92,
+     "retape": 0.05,
+     "hold": 0.03,
+     "return": 0.0
+    },
+    "confidence": 0.89,
+    "damaged": 0.05,
+    "risk": 0.14,
+    "decision": "ship",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0108",
+   "file": "photos/real/P-0108.jpg",
+   "declared": "Ceramic plates, 6",
+   "kind": "dented",
+   "fragile_sticker": true,
+   "truth": {
+    "action": "hold",
+    "risk": 1,
+    "damaged": false
+   },
+   "sticker": "FRAGILE",
+   "notes": "Closed box at a door with FRAGILE sticker; small crease at one corner, otherwise intact.",
+   "credit": {
+    "title": "Fragile Parcel left outside door.jpg",
+    "author": "Meanwell Packaging",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Fragile_Parcel_left_outside_door.jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, cropped (0.2,0.3,0.85,0.95 of width/height), resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "hold",
+    "probabilities": {
+     "ship": 0.29,
+     "retape": 0.01,
+     "hold": 0.7,
+     "return": 0.0
+    },
+    "confidence": 0.6,
+    "damaged": 0.4,
+    "risk": 0.9,
+    "decision": "hold",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0109",
+   "file": "photos/real/P-0109.jpg",
+   "declared": "Glass vase",
+   "kind": "torn",
+   "fragile_sticker": true,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   },
+   "sticker": "FRAGILE (Handle with care)",
+   "notes": "Top flap torn, packing peanuts spilling from a hole at the bottom corner. FRAGILE sticker.",
+   "credit": {
+    "title": "A cardboard box with a hole",
+    "author": "RDNE Stock project",
+    "license": "Pexels License",
+    "url": "https://www.pexels.com/photo/a-cardboard-box-with-a-hole-7363092/",
+    "site": "Pexels",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "hold",
+    "probabilities": {
+     "ship": 0.06,
+     "retape": 0.15,
+     "hold": 0.76,
+     "return": 0.03
+    },
+    "confidence": 0.68,
+    "damaged": 0.54,
+    "risk": 1.16,
+    "decision": "hold",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0110",
+   "file": "photos/real/P-0110.jpg",
+   "declared": "Desk lamp, boxed",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Closed box on a road, tape intact, small label; no damage visible.",
+   "credit": {
+    "title": "A package on the road",
+    "author": "Ekaterina Belinskaya",
+    "license": "Pexels License",
+    "url": "https://www.pexels.com/photo/a-package-on-the-road-4744748/",
+    "site": "Pexels",
+    "modified": "EXIF-rotated, cropped (0.1,0.45,1.0,0.95 of width/height), resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.8,
+     "retape": 0.05,
+     "hold": 0.15,
+     "return": 0.0
+    },
+    "confidence": 0.73,
+    "damaged": 0.09,
+    "risk": 0.38,
+    "decision": "spot_check",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0111",
+   "file": "photos/real/P-0111.jpg",
+   "declared": "Hardcover book",
+   "kind": "ambiguous",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Plain closed mailer box on carpet, half in hard window shadow. Intact.",
+   "credit": {
+    "title": "A cardboard box sits on a textured surface",
+    "author": "Anastasiya Doicheva",
+    "license": "Unsplash License",
+    "url": "https://unsplash.com/photos/a-cardboard-box-sits-on-a-textured-surface-2w-EQD1SkuY",
+    "site": "Unsplash",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.98,
+     "retape": 0.01,
+     "hold": 0.01,
+     "return": 0.0
+    },
+    "confidence": 0.97,
+    "damaged": 0.04,
+    "risk": 0.14,
+    "decision": "ship",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0112",
+   "file": "photos/real/P-0112.jpg",
+   "declared": "Brass pipe fittings, 100",
+   "kind": "torn",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   },
+   "sticker": null,
+   "notes": "Box split open at the side, small metal parts spilled across the floor next to a roller conveyor.",
+   "credit": {
+    "title": "Eaton parcel with ruptured packaging.jpg",
+    "author": "Sesamehoneytart",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Eaton_parcel_with_ruptured_packaging.jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, cropped (0.45,0.25,1.0,0.85 of width/height), resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "hold",
+    "probabilities": {
+     "ship": 0.04,
+     "retape": 0.22,
+     "hold": 0.45,
+     "return": 0.29
+    },
+    "confidence": 0.27,
+    "damaged": 0.79,
+    "risk": 1.56,
+    "decision": "hold",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0113",
+   "file": "photos/real/P-0113.jpg",
+   "declared": "Board game",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Small closed box, tape intact.",
+   "credit": {
+    "title": "Small Cardboard Moving Box Taped Closed (47303024341).jpg",
+    "author": "HireAHelper",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Small_Cardboard_Moving_Box_Taped_Closed_(47303024341).jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.96,
+     "retape": 0.03,
+     "hold": 0.01,
+     "return": 0.0
+    },
+    "confidence": 0.95,
+    "damaged": 0.05,
+    "risk": 0.16,
+    "decision": "ship",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0114",
+   "file": "photos/real/P-0114.jpg",
+   "declared": "Plastic storage bins",
+   "kind": "dented",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 1,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Worn, scuffed box, corners rounded and crumpled, re-sealed with tape and plastic wrap; walls not caved in. Carrier logo on tape.",
+   "credit": {
+    "title": "A mysterious box... (4253114519).jpg",
+    "author": "Catherine from Australia",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:A_mysterious_box..._(4253114519).jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "retape",
+    "probabilities": {
+     "ship": 0.27,
+     "retape": 0.36,
+     "hold": 0.35,
+     "return": 0.02
+    },
+    "confidence": 0.15,
+    "damaged": 0.47,
+    "risk": 1.05,
+    "decision": "retape",
+    "agrees": false
+   }
+  },
+  {
+   "id": "P-0115",
+   "file": "photos/real/P-0115.jpg",
+   "declared": "Bottled water, 24",
+   "kind": "torn",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   },
+   "sticker": null,
+   "notes": "Case box with a large hole torn in the side, bottles lying next to it.",
+   "credit": {
+    "title": "A torn cardboard box and water bottles on grass",
+    "author": "Preillumination SeTh",
+    "license": "Unsplash License",
+    "url": "https://unsplash.com/photos/a-torn-cardboard-box-and-water-bottles-on-grass-DTtM2PZmSNg",
+    "site": "Unsplash",
+    "modified": "EXIF-rotated, cropped (0.1,0.3,0.9,1.0 of width/height), resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "hold",
+    "probabilities": {
+     "ship": 0.01,
+     "retape": 0.01,
+     "hold": 0.93,
+     "return": 0.05
+    },
+    "confidence": 0.91,
+    "damaged": 0.94,
+    "risk": 1.63,
+    "decision": "hold",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0116",
+   "file": "photos/real/P-0116.jpg",
+   "declared": "Bedding set",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Closed retail shipping box with label, close-up, intact.",
+   "credit": {
+    "title": "Amazon Box.JPG",
+    "author": "David",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Amazon_Box.JPG",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.72,
+     "retape": 0.2,
+     "hold": 0.08,
+     "return": 0.0
+    },
+    "confidence": 0.63,
+    "damaged": 0.14,
+    "risk": 0.3,
+    "decision": "spot_check",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0117",
+   "file": "photos/real/P-0117.jpg",
+   "declared": "Running shoes",
+   "kind": "open_tape",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "retape",
+    "risk": 1,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Shipping box with lid flap open and contents area exposed.",
+   "credit": {
+    "title": "Amazon Box (Picture 1).JPG",
+    "author": "Matthew Paul Argall",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Amazon_Box_(Picture_1).JPG",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "retape",
+    "probabilities": {
+     "ship": 0.08,
+     "retape": 0.83,
+     "hold": 0.08,
+     "return": 0.01
+    },
+    "confidence": 0.77,
+    "damaged": 0.15,
+    "risk": 0.67,
+    "decision": "retape",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0118",
+   "file": "photos/real/P-0118.jpg",
+   "declared": "Bluetooth speaker",
+   "kind": "crushed",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   },
+   "sticker": null,
+   "notes": "Box with bottom corner smashed in and crumpled, cardboard split at the base. Carrier logo.",
+   "credit": {
+    "title": "Damaged FedEx Box - Corner Smashed In Cardboard Shipping Container (53371562280).jpg",
+    "author": "Tony Webster",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Damaged_FedEx_Box_-_Corner_Smashed_In_Cardboard_Shipping_Container_(53371562280).jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "hold",
+    "probabilities": {
+     "ship": 0.04,
+     "retape": 0.02,
+     "hold": 0.93,
+     "return": 0.01
+    },
+    "confidence": 0.91,
+    "damaged": 0.94,
+    "risk": 1.29,
+    "decision": "hold",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0119",
+   "file": "photos/real/P-0119.jpg",
+   "declared": "Wool sweater",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Closed box with an express label in a pouch, intact.",
+   "credit": {
+    "title": "A close up shot of a package",
+    "author": "Polina Tankilevitch",
+    "license": "Pexels License",
+    "url": "https://www.pexels.com/photo/a-close-up-shot-of-a-package-4440891/",
+    "site": "Pexels",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.81,
+     "retape": 0.09,
+     "hold": 0.1,
+     "return": 0.0
+    },
+    "confidence": 0.75,
+    "damaged": 0.12,
+    "risk": 0.4,
+    "decision": "spot_check",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0120",
+   "file": "photos/real/P-0120.jpg",
+   "declared": "Wall mirror",
+   "kind": "fragile",
+   "fragile_sticker": true,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": "FRAGILE MIRROR GLASS / DO NOT LAY FLAT (printed)",
+   "notes": "Closed flat box with large printed FRAGILE MIRROR GLASS marking; intact.",
+   "credit": {
+    "title": "A cardboard box with labelled fragile",
+    "author": "RDNE Stock project",
+    "license": "Pexels License",
+    "url": "https://www.pexels.com/photo/a-cardboard-box-with-labelled-fragile-7464700/",
+    "site": "Pexels",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.55,
+     "retape": 0.08,
+     "hold": 0.37,
+     "return": 0.0
+    },
+    "confidence": 0.4,
+    "damaged": 0.11,
+    "risk": 0.28,
+    "decision": "spot_check",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0121",
+   "file": "photos/real/P-0121.jpg",
+   "declared": "Notebook set",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Small closed box, tape intact.",
+   "credit": {
+    "title": "Small Cardboard Moving Box Taped Closed (47303025881).jpg",
+    "author": "HireAHelper",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Small_Cardboard_Moving_Box_Taped_Closed_(47303025881).jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.75,
+     "retape": 0.19,
+     "hold": 0.06,
+     "return": 0.0
+    },
+    "confidence": 0.67,
+    "damaged": 0.09,
+    "risk": 0.21,
+    "decision": "spot_check",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0122",
+   "file": "photos/real/P-0122.jpg",
+   "declared": "Sneakers",
+   "kind": "ambiguous",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Black box with a large white brand logo, label on top; intact. Dark box and logo can look like a hole or stain.",
+   "credit": {
+    "title": "ZOZOTOWN box 黒段ボール箱 Sep 15, 2018.jpg",
+    "author": "kobakou",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:ZOZOTOWN_box_%E9%BB%92%E6%AE%B5%E3%83%9C%E3%83%BC%E3%83%AB%E7%AE%B1_Sep_15,_2018.jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.76,
+     "retape": 0.13,
+     "hold": 0.11,
+     "return": 0.0
+    },
+    "confidence": 0.68,
+    "damaged": 0.15,
+    "risk": 0.39,
+    "decision": "spot_check",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0123",
+   "file": "photos/real/P-0123.jpg",
+   "declared": "Teapot, ceramic",
+   "kind": "dented",
+   "fragile_sticker": true,
+   "truth": {
+    "action": "hold",
+    "risk": 1,
+    "damaged": false
+   },
+   "sticker": "FRAGILE",
+   "notes": "Closed box with FRAGILE sticker; creased tape and a soft dent on top-right; walls intact.",
+   "credit": {
+    "title": "Damaged Cardboard Box Labelled Fragile.jpg",
+    "author": "Meanwell Packaging",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Damaged_Cardboard_Box_Labelled_Fragile.jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "hold",
+    "probabilities": {
+     "ship": 0.44,
+     "retape": 0.03,
+     "hold": 0.53,
+     "return": 0.0
+    },
+    "confidence": 0.37,
+    "damaged": 0.21,
+    "risk": 0.66,
+    "decision": "hold",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0124",
+   "file": "photos/real/P-0124.jpg",
+   "declared": "Yoga mat",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Closed flat box on a road, hard shadow; intact.",
+   "credit": {
+    "title": "Carton box on yellow lines on road",
+    "author": "Ekaterina Belinskaya",
+    "license": "Pexels License",
+    "url": "https://www.pexels.com/photo/carton-box-on-yellow-lines-on-road-4744754/",
+    "site": "Pexels",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.73,
+     "retape": 0.03,
+     "hold": 0.24,
+     "return": 0.0
+    },
+    "confidence": 0.64,
+    "damaged": 0.2,
+    "risk": 0.62,
+    "decision": "spot_check",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0125",
+   "file": "photos/real/P-0125.jpg",
+   "declared": "Wine glasses, 2",
+   "kind": "torn",
+   "fragile_sticker": true,
+   "truth": {
+    "action": "hold",
+    "risk": 2,
+    "damaged": true
+   },
+   "sticker": "FRAGILE (Handle with care)",
+   "notes": "Close-up: bottom corner torn open, packing peanuts poking out. FRAGILE sticker.",
+   "credit": {
+    "title": "Brown cardboard box with red and white label",
+    "author": "RDNE Stock project",
+    "license": "Pexels License",
+    "url": "https://www.pexels.com/photo/brown-cardboard-box-with-red-and-white-label-7362844/",
+    "site": "Pexels",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "hold",
+    "probabilities": {
+     "ship": 0.02,
+     "retape": 0.01,
+     "hold": 0.97,
+     "return": 0.0
+    },
+    "confidence": 0.96,
+    "damaged": 0.68,
+    "risk": 1.13,
+    "decision": "hold",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0126",
+   "file": "photos/real/P-0126.jpg",
+   "declared": "Disc golf discs",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Large closed box strapped to a pallet, standing in snow; box itself dry and intact.",
+   "credit": {
+    "title": "Antarctica - South Pole Cardboard Box \"Disc Golf - Gym\".jpg",
+    "author": "Eli Duke",
+    "license": "CC BY-SA 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Antarctica_-_South_Pole_Cardboard_Box_%22Disc_Golf_-_Gym%22.jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.8,
+     "retape": 0.08,
+     "hold": 0.12,
+     "return": 0.0
+    },
+    "confidence": 0.73,
+    "damaged": 0.15,
+    "risk": 0.3,
+    "decision": "spot_check",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0127",
+   "file": "photos/real/P-0127.jpg",
+   "declared": "Wool socks",
+   "kind": "open_tape",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "retape",
+    "risk": 1,
+    "damaged": false
+   },
+   "sticker": "this side up arrows (printed)",
+   "notes": "Box with top flaps lifted and loose tape; not damaged.",
+   "credit": {
+    "title": "Cardboard box.jpg",
+    "author": "MrBeastRapper",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Cardboard_box.jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "retape",
+    "probabilities": {
+     "ship": 0.08,
+     "retape": 0.74,
+     "hold": 0.17,
+     "return": 0.01
+    },
+    "confidence": 0.65,
+    "damaged": 0.34,
+    "risk": 0.73,
+    "decision": "retape",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0128",
+   "file": "photos/real/P-0128.jpg",
+   "declared": "Glass candle jars",
+   "kind": "fragile",
+   "fragile_sticker": true,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": "FRAGILE + keep-dry + this-way-up icons",
+   "notes": "Closed box at a door with a small FRAGILE label and printed keep-dry and this-way-up icons; intact.",
+   "credit": {
+    "title": "A brown cardboard box beside white door",
+    "author": "Tima Miroshnichenko",
+    "license": "Pexels License",
+    "url": "https://www.pexels.com/photo/a-brown-cardboard-box-beside-white-door-6170463/",
+    "site": "Pexels",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.72,
+     "retape": 0.02,
+     "hold": 0.26,
+     "return": 0.0
+    },
+    "confidence": 0.63,
+    "damaged": 0.03,
+    "risk": 0.18,
+    "decision": "spot_check",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0129",
+   "file": "photos/real/P-0129.jpg",
+   "declared": "Desk organiser",
+   "kind": "clean",
+   "fragile_sticker": false,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": null,
+   "notes": "Closed box, tape intact, studio backdrop.",
+   "credit": {
+    "title": "Large Cardboard Moving Box Taped Closed (47008641671).jpg",
+    "author": "HireAHelper",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Large_Cardboard_Moving_Box_Taped_Closed_(47008641671).jpg",
+    "site": "Wikimedia Commons",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.92,
+     "retape": 0.05,
+     "hold": 0.03,
+     "return": 0.0
+    },
+    "confidence": 0.89,
+    "damaged": 0.06,
+    "risk": 0.2,
+    "decision": "ship",
+    "agrees": true
+   }
+  },
+  {
+   "id": "P-0130",
+   "file": "photos/real/P-0130.jpg",
+   "declared": "Picture frame, glass front",
+   "kind": "fragile",
+   "fragile_sticker": true,
+   "truth": {
+    "action": "ship",
+    "risk": 0,
+    "damaged": false
+   },
+   "sticker": "FRAGILE (Please handle with care)",
+   "notes": "Closed box with FRAGILE sticker sitting on another box; intact.",
+   "credit": {
+    "title": "Close up shot of two brown shipping boxes",
+    "author": "RDNE Stock project",
+    "license": "Pexels License",
+    "url": "https://www.pexels.com/photo/close-up-shot-of-two-brown-shipping-boxes-7464716/",
+    "site": "Pexels",
+    "modified": "EXIF-rotated, resized to 768 px long side, JPEG q85"
+   },
+   "jev_check": {
+    "date": "2026-10-30",
+    "model": "jev-1.14.0",
+    "model_choice": "ship",
+    "probabilities": {
+     "ship": 0.51,
+     "retape": 0.12,
+     "hold": 0.37,
+     "return": 0.0
+    },
+    "confidence": 0.35,
+    "damaged": 0.07,
+    "risk": 0.22,
+    "decision": "spot_check",
+    "agrees": true
+   }
+  }
+ ]
+}
